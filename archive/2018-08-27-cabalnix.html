@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <link rel="stylesheet" href="../css/tachyons.min.css"></link>
+    <link rel="stylesheet" href="../css/entry.css">
+    <link rel="stylesheet" href="../css/responsive_helpers.css">
+    <title>dialed.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="div-desktop">
+        <article class="flex flex-wrap ma6">
+            <div class="w-50 pl5 pt5 measure-wide center">
+                <header class="pt4">
+                    <a href="../index.html">
+                        <h1 class="b link dim"> joseph rangel </h1>
+                    </a>
+                    <nav class "fw3 black items-end-l">
+                        <a class="dim" href="http://git.dialed.rip">git</a>
+                        <a class="dim" href="../archive/archive.html">archive</a>
+                        <a class="dim" href="../links.html">links</a>
+                        <a class="dim" href="../contact.html">contact</a>
+                    </nav>
+                    <div class="pt3">
+                        <h4 id="issue" class="fw4 ml3">#1</h4>
+                        <h4 id="title" class="bold">nix style local builds</h4>
+                        <h4 id="date" class="fw3">18/08/27—<span id="topics">cabal—haskell</span></h4>
+                    </div>
+                </header>
+            </div>
+            <div class="w-50">
+                <div id="junkp" class="f5 fw2 lh-copy measure">
+                    <p>
+                        A quick few commands to try the new nix-style local builds.
+                    </p>
+                    <p class="ml3 indent">
+                        <code><br>mkdir project</code>
+                        <code><br>cd project</code>
+                        <code><br>cabal init</code>
+                        <em><br>fill out project options</em>
+                        <em><br>optionally fill out your .cabal file options</em>
+                        <code><br>cabal new-configure</code>
+                        <code><br>cabal new-repl</code>
+                        <em><br>optionally start working</em>
+                        <code><br>cabal new-build</code>
+                        <br>
+                    </p>
+                    <br>
+                    <p class="indent">
+                        I have noticed though that running <code>cabal new-run</code> will not run if there have not been any changes, it reports <em>Up to date</em>. I typically use run to execute my binary, not rebuild. Fumbling all the way into the dist directory shouldn't happen until I am finished. Unless I'm missing something, I would appreciate the old behavior that <code>cabal run</code> would execute. For now, I must use
+                        <code>cabal new-repl</code> and re-execute there. The above is only meant to get someone started. For more details, as always refer to the <a href="https://www.haskell.org/cabal/users-guide/intro.html">documentation.</a>.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="div-mobile">
+        <div class="flex justify-center pt6">
+            <div class="w-two-thirds">
+                <main class="flex flex-column avenir:'avenir next'">
+                    <header class="pb3">
+                        <a class="pb4" href="../index.html">
+                            <h1 class="b link dim"> joseph rangel </h1>
+                        </a>
+                        <nav class "fw3 black items-end-l">
+                            <a class="dim" href="http://git.dialed.rip">git</a>
+                            <a class="dim" href="../archive/archive.html">archive</a>
+                            <a class="dim" href="../links.html">links</a>
+                            <a class="dim" href="../contact.html">contact</a>
+                        </nav>
+                        <div class="pt3">
+                            <h4 id="issue" class="fw4 ml3">#1</h4>
+                            <h4 id="title" class="bold">nix style local builds</h4>
+                            <h4 id="date" class="fw3">18/08/27—<span id="topics">cabal—haskell</span></h4>
+                        </div>
+                        <div id="junkp" class="pt3 f5 fw2 lh-copy wide-measure">
+                            <p class="indent">
+                                A quick few commands to try the new nix-style local builds.
+                            </p>
+                            <p class="center">
+                                <code><br>mkdir project</code>
+                                <code><br>cd project</code>
+                                <code><br>cabal init</code>
+                                <code><br>cabal new-configure</code>
+                                <code><br>cabal new-repl</code>
+                                <code><br>cabal new-build</code>
+                            </p>
+
+                            <p class="indent">
+                                I have noticed though that running <code>cabal new-run</code> will not run if there have not been any changes, it reports <em>Up to date</em>. I typically use run to execute my binary, not rebuild. Fumbling all the way into the dist directory shouldn't happen until I am finished. Unless I'm missing something, I would appreciate the old behavior that <code>cabal run</code> would execute. For now, I must use
+                                <code>cabal new-repl</code> and re-execute there. The above is only meant to get someone started. For more details, as always refer to the <a href="https://www.haskell.org/cabal/users-guide/intro.html">documentation.</a>.
+                            </p>
+                        </div>
+                    </header>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

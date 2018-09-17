@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <link rel="stylesheet" href="../css/tachyons.min.css"></link>
+    <link rel="stylesheet" href="../css/entry.css">
+    <link rel="stylesheet" href="../css/responsive_helpers.css">
+    <title>dialed.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="div-desktop">
+        <article class="flex flex-wrap ma6">
+            <div class="w-50 pl5 pt5 measure-wide center">
+                <header class="pt4">
+                    <a href="../index.html">
+                        <h1 class="b link dim"> joseph rangel </h1>
+                    </a>
+                    <nav class "fw3 black items-end-l"> <a class="dim" href="http://git.dialed.rip">git</a> <a class="dim" href="../archive/archive.html">archive</a> <a class="dim" href="../links.html">links</a> <a class="dim" href="../contact.html">contact</a> </nav>
+                    <div class="pt3">
+                        <h4 id="issue" class="fw4 ml3">#0</h4>
+                        <h4 id="title" class="bold">junk</h4>
+                        <h4 id="date" class="fw3">18/08/27—<span id="topics">haskell—generator</span></h4>
+                    </div>
+                </header>
+            </div>
+            <div class="w-50">
+                <div id="junkp" class="f5 fw2 lh-copy measure">
+                    <p class="indent">
+                        Junk is a static site generator written in Haskell for design flexibility. There is no markup, only html where the appropriate id attributes and comments direct the content. There is currently no plans to support rss or any other features. See further for other generators. It is dependent on containers , directory, text and tagsoup.
+                    </p>
+
+                    <p class="indent">
+                        While I am currently using it, one may want to see other alternatives. Some notable generators are
+                        <a class="link dim underline" href="https://jaspervdj.be/hakyll">hakyll</a>,
+                        <a class="link dim underline" href="https://github.com/jellehermsen/HasClunk">hasclunk</a>,
+                        <a class="link dim underline" href="https://blogc.rgm.io/">blogc</a>,
+                        <a class="link dim underline" href="https://kristaps.bsd.lv/sblg/">sblg</a>. As far as design flexibility I found hakyll the easiest to get up and running. Though I had a great appreciation for the simplicity of hasclunk. I couldn't find an obvious route to customize sblg extensively but also was impressed with its simplicity.
+                    </p>
+
+                    <p class="indent">
+                        Currently, the way to use junk is to clone the repo and modify the templates. Take note of the id attributes associated with junk: <em>junkp</em> is populated by blog previews, <em>junkhref</em> links to a blog entry,
+                        <em>junka</em> archives a blog post designed in <code>archive_elements.html</code>.
+                    </p>
+
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="div-mobile">
+        <div class="flex justify-center pt6">
+            <div class="w-two-thirds">
+                <main class="flex flex-column avenir:'avenir next'">
+
+                    <head class="pb3">
+                        <a class="pb4" href="../index.html">
+                            <h1 class="b link dim"> joseph rangel </h1>
+                        </a>
+                        <nav class "fw3 black items-end-l">
+                            <a class="dim" href="http://git.dialed.rip">git</a>
+                            <a class="dim" href="../archive/archive.html">archive</a>
+                            <a class="dim" href="../links.html">links</a>
+                            <a class="dim" href="../contact.html">contact</a>
+                        </nav>
+                        <div class="pt3">
+                            <h4 id="issue" class="fw4 ml3">#1</h4>
+                            <h4 id="title" class="bold">nix style local builds</h4>
+                            <h4 id="date" class="fw3">18/08/27—<span id="topics">cabal—haskell</span></h4>
+                        </div>
+                    </head>
+
+                    <div id="junkp" class="pt3 f5 fw2 lh-copy wide-measure">
+                        <p class="indent">
+                            Junk is a static site generator written in Haskell for design flexibility. There is no markup, only html where the appropriate id attributes and comments direct the content. There is currently no plans to support rss or any other features. See further for other generators. It is dependent on containers , directory, text and tagsoup.
+                        </p>
+
+                        <p class="indent">
+                            While I am currently using it, one may want to see other alternatives. Some notable generators are
+                            <a class="link dim underline" href="https://jaspervdj.be/hakyll">hakyll</a>,
+                            <a class="link dim underline" href="https://github.com/jellehermsen/HasClunk">hasclunk</a>,
+                            <a class="link dim underline" href="https://blogc.rgm.io/">blogc</a>,
+                            <a class="link dim underline" href="https://kristaps.bsd.lv/sblg/">sblg</a>. As far as design flexibility I found hakyll the easiest to get up and running. Though I had a great appreciation for the simplicity of hasclunk. I couldn't find an obvious route to customize sblg extensively but also was impressed with its simplicity.
+                        </p>
+
+                        <p class="indent">
+                            Currently, the way to use junk is to clone the repo and modify the templates. Take note of the id attributes associated with junk: <em>junkp</em> is populated by blog previews, <em>junkhref</em> links to a blog entry,
+                            <em>junka</em> archives a blog post designed in <code>archive_elements.html</code>.
+                        </p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
